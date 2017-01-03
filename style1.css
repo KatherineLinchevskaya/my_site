@@ -1,0 +1,245 @@
+body{
+	background: url(images/4.jpg);
+	margin: 0 auto; padding: 0;
+	font: 16px/24px Arial, Tahoma, sans-serif; 
+	color: #000000;}
+	a{text-decoration: none;}
+	a:hover{transition: all 0.5s;}
+	
+
+/*Site structure*/
+div.mid{
+	width: 1000px; 
+	margin: 0 auto;
+	}
+
+div.header{
+	background: #101417; 
+	opacity: 0.7; 
+	margin: 0; 
+	padding: 0;
+	}
+div.footer{
+	margin: 20px 0; 
+	text-align: center; 
+	text-transform: uppercase;
+	}
+
+/*Site header*/
+ul {display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.topmenu{float:right; 
+	height: 87px; 
+	line-height: 87px;}
+ul.topmenu > li {
+    float: right;
+	position: relative;
+
+}
+ul.topmenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+ul.topmenu li a:hover {
+    color: #5813d2;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 70px;
+	line-height: 20px;
+    left: 0;
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+ul.submenu li {
+    display: block;
+}
+ul.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+ul.submenu li a:hover {
+    color: #5813d2;
+}
+ul.topmenu li:hover ul.submenu {
+    display: block;
+	transition: transform 1s;
+}
+
+
+/*Slogan*/
+div.slogan h2{color: #000000; 
+	text-transform: uppercase; 
+	text-align: center;
+	margin-top: 50px;}
+
+
+
+/*Contacts*/
+div.content p h3{
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+	text-align: right;
+	}
+div.info img{
+	padding-top: 10px;
+}
+
+.button{
+ text-decoration:none; 
+ text-align:center; 
+ padding:11px 32px; 
+border:solid 1px #004F72;  
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px; 
+ border-radius: 4px; 
+ font:10px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#0b020d; 
+ background-color:#c73ba6; 
+ background-image: -moz-linear-gradient(top, #c73ba6 0%, #9519a5 100%); 
+ background-image: -webkit-linear-gradient(top, #c73ba6 0%, #9519a5 100%); 
+ background-image: -o-linear-gradient(top, #c73ba6 0%, #9519a5 100%); 
+ background-image: -ms-linear-gradient(top, #c73ba6 0% ,#9519a5 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9519a5', endColorstr='#9519a5',GradientType=0 ); 
+ background-image: linear-gradient(top, #c73ba6 0% ,#9519a5 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+float: left;
+  
+  }
+/*Content*/
+div.fon{
+	background: #878787 
+	border: 1px solid #ccc; 
+	border-top: none; 
+	padding: 40px;
+	}
+div.fon hr.line{
+	border: none; 
+	border-bottom: 1px dashed #ccc; 
+	height: 0; 
+	margin-bottom: 40px 0;
+	} 
+div.block{
+	width: 440px; 
+	float: left;
+	}
+div.block:nth-of-type(even){
+	float: right;
+	}
+div.block a p{
+	color: #272727;
+	}
+div.anons{
+	background: #f5f5f5; 
+	border: 1px solid #ccc; 
+	border-radius: 3px; 
+	padding: 20px;
+	}
+div.anons:hover {
+	background: #c892df; 
+	border: 1px solid #bfd9; 
+	transition: all 1s;
+	}
+div.anons img{
+	box-shadow: 1px 1px 5px #777;
+	}
+div.anons:hover img{
+	transform:scale(1.15);
+	transition: transform 1s;
+	}
+div.block:nth-of-type(even) div.anons:hover img{
+	transform:scale(1.15);
+	}
+div.anons h3{
+	font-size: 20px;
+	font-weight: normal; 
+	margin: 20px 0 10px;
+	padding: 0; 
+	color:#01617d;
+	line-height: 20px;
+	}
+div.anons p{
+	text-shadow: 1px 1px 0 #fff;
+	}
+
+/*History*/
+
+	
+/*Подвал*/
+div.footer span{
+	margin: 0 20px;
+	}
+
+
+/*Адаптивный дизайн*/
+@media screen and (max-width: 1000px){
+	div.mid{
+		width: 95%;
+		}
+	div.block{
+		width: 48%
+		}
+	div.anons img{
+		width: 100%;
+		}
+	div.anons h3{
+		font-size: 18px;
+		}
+	div.mid img{
+		width: 95%;
+	}
+	div.footer img{
+		width: 95%;
+	}
+}
+@media screen and (max-width: 670px){	
+	ul.topmenu span{
+		margin: 10px 0; 
+		display: block;
+		}
+	div.header{
+		text-align: center; 
+		background-position: center -130px;
+		}
+	div.block, div.block:nth-of-type(even){
+		float: none;
+		}
+	div.block{
+		width: auto; 
+		margin-bottom: 40px;
+		}
+	div.block:nth-last-of-type(2){
+		margin-bottom: 0;
+		}
+	div.footer span{
+		margin: 10px 0;
+		display: block;
+		}
+	
+}
+
+
+
+div.clear{clear: both;}
+
+
+
